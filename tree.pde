@@ -11,16 +11,9 @@ void setup() {
   fullScreen();
   frameRate(10);
   
-  images[0] = loadImage("tree01.png");
-  images[1] = loadImage("tree02.png");
-  images[2] = loadImage("tree03.png");
-  images[3] = loadImage("tree04.png");
-  images[4] = loadImage("tree05.png");
-  images[5] = loadImage("tree06.png");
-  images[6] = loadImage("tree07.png");
-  images[7] = loadImage("tree08.png");
-  images[8] = loadImage("tree09.png");
-  images[9] = loadImage("tree10.png");
+  for (int i = 0; i < 10; i++) {
+    images[i] = loadImage("./images/tree" + (i+1) + ".png");
+  }
 }
 
 void draw() {
